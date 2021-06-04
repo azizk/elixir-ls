@@ -400,7 +400,7 @@ defmodule ElixirLS.LanguageServer.Providers.Completion do
 
     formatted_spec =
       if expanded_spec != "" do
-        "\n\n```\n#{expanded_spec}\n```\n"
+        "\n\n```elixir\n#{expanded_spec}\n```\n"
       else
         ""
       end
@@ -426,7 +426,7 @@ defmodule ElixirLS.LanguageServer.Providers.Completion do
 
     formatted_spec =
       if spec != "" do
-        "\n\n```\n#{spec}\n```\n"
+        "\n\n```elixir\n#{spec}\n```\n"
       else
         ""
       end
